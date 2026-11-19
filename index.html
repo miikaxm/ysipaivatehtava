@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ysipäivän oma nettisivu</title>
+  <style>
+    /* css */
+    body {
+      background-color: #dbeafe; /* Tehtävä 2: vaihda taustaväri */
+      color: #172554;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px 16px;
+      transition: background-color 0.3s;
+    }
+    .kortti {
+      background: white;
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 32px;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px #0000001a;
+    }
+    h1 { font-size: 32px; }
+    .emoji { font-size: 64px; }
+    button {
+      background-color: #2563eb; /* Tehtävä 4: vaihda napin väri */
+      color: white;
+      border: none;
+      padding: 14px 24px;
+      border-radius: 12px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover { filter: brightness(1.1); }
+  </style>
+</head>
+<body>
+  <!-- html -->
+  <main class="kortti">
+    <div class="emoji">🚀</div> <!-- Tehtävä 3: vaihda emoji -->
+    <h1>Moi! Tervetuloa ysipäivä sivuille!</h1> <!-- Tehtävä 1: vaihda otsikko -->
+    <p>Tässä on teille itse muokattava nettisivu.</p>
+    <p id="viesti">Klikkaa nappia ja katso mitä tapahtuu!</p>
+    <button onclick="vaihdaVari()">Vaihda väriä!</button>
+  </main>
+
+  <script>
+    // värin vaihto
+    function vaihdaVari() {
+      const varit = ["#fecaca", "#bbf7d0", "#fde68a", "#ddd6fe"];
+      const satunnainen = Math.floor(Math.random() * varit.length);
+      document.body.style.backgroundColor = varit[satunnainen];
+      document.getElementById("viesti").textContent = "Jes, nappi toimii! 🎉";
+    }
+    // Tehtävä 5: lisää oma väri varit-listaan, esim. "#fbcfe8"
+  </script>
+</body>
+</html>
