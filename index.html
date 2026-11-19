@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ysipäivän oma nettisivu</title>
   <style>
-    /* css */
+    /* CSS - Tyylit */
     body {
       background-color: #dbeafe; /* Tehtävä 2: vaihda taustaväri */
       color: #172554;
@@ -37,17 +37,17 @@
   </style>
 </head>
 <body>
-  <!-- html -->
+  <!-- HTMl - Rakenne -->
   <main class="kortti">
     <div class="emoji">🚀</div> <!-- Tehtävä 3: vaihda emoji -->
-    <h1>Moi! Tervetuloa ysipäivä sivuille!</h1> <!-- Tehtävä 1: vaihda otsikko -->
+    <h1>Tervetuloa ysipäivä sivuille!</h1> <!-- Tehtävä 1: vaihda otsikko -->
     <p>Tässä on teille itse muokattava nettisivu.</p>
     <p id="viesti">Klikkaa nappia ja katso mitä tapahtuu!</p>
     <button onclick="vaihdaVari()">Vaihda väriä!</button>
   </main>
 
   <script>
-    // värin vaihto
+    // Värin vaihto
     function vaihdaVari() {
       const varit = ["#fecaca", "#bbf7d0", "#fde68a", "#ddd6fe"];
       const satunnainen = Math.floor(Math.random() * varit.length);
